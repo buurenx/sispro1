@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Collections;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x = 0, y = 0, sumy = 0, I = 0, h = 0.0000001;
+            for (x = (-1); x <= 1; x = x + 0.0000001) 
+            {
+                y = Math.Sqrt(1 - x *x);  
+                sumy += y;
+            }
+            I = h * sumy;
+            Console.WriteLine(I);
+
+        }
+    }
+}
+
